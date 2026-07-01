@@ -1,0 +1,224 @@
+{
+  "characters": [
+    {
+      "id": "mia",
+      "label": "Mia",
+      "language": "en",
+      "gender": "female",
+      "source": "hume-tada-space",
+      "cast_role": "expressive",
+      "presets": [
+        {
+          "id": "mia_neutral",
+          "label": "Mia \u00b7 neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Even, conversational neutral.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_neutral_freeform.wav"
+        },
+        {
+          "id": "mia_calm",
+          "label": "Mia \u00b7 calm",
+          "intonation": "calm",
+          "emotion": "serenity",
+          "description": "Soft, relaxed delivery.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_serenity_freeform.wav"
+        },
+        {
+          "id": "mia_curious",
+          "label": "Mia \u00b7 curious",
+          "intonation": "curious",
+          "emotion": "interest",
+          "description": "Interested, questioning tone.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_interest_freeform.wav"
+        },
+        {
+          "id": "mia_amused",
+          "label": "Mia \u00b7 amused",
+          "intonation": "amused",
+          "emotion": "amusement",
+          "description": "Light, amused tone.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_amusement_freeform.wav"
+        },
+        {
+          "id": "mia_amazed",
+          "label": "Mia \u00b7 amazed",
+          "intonation": "amazed",
+          "emotion": "amazement",
+          "description": "Surprised, delighted.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_amazement_freeform.wav"
+        },
+        {
+          "id": "mia_confused",
+          "label": "Mia \u00b7 confused",
+          "intonation": "confused",
+          "emotion": "confusion",
+          "description": "Uncertain, puzzled.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_confusion_freeform.wav"
+        },
+        {
+          "id": "mia_content",
+          "label": "Mia \u00b7 content",
+          "intonation": "content",
+          "emotion": "contentment",
+          "description": "Warm, satisfied.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_contentment_freeform.wav"
+        },
+        {
+          "id": "mia_sad",
+          "label": "Mia \u00b7 sad",
+          "intonation": "sad",
+          "emotion": "sadness",
+          "description": "Melancholic.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_sadness_freeform.wav"
+        },
+        {
+          "id": "mia_angry",
+          "label": "Mia \u00b7 angry",
+          "intonation": "angry",
+          "emotion": "anger",
+          "description": "Sharp, intense.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_anger_freeform.wav"
+        },
+        {
+          "id": "mia_relief",
+          "label": "Mia \u00b7 relief",
+          "intonation": "relief",
+          "emotion": "relief",
+          "description": "Relieved, unwinding.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_relief_freeform.wav"
+        },
+        {
+          "id": "mia_fearful",
+          "label": "Mia \u00b7 fearful",
+          "intonation": "fearful",
+          "emotion": "fear",
+          "description": "Anxious, tense.",
+          "recording_quality": "dramatic",
+          "narration_recommended": false,
+          "file": "fb_ears_emo_fear_freeform.wav"
+        },
+        {
+          "id": "mia_disgust",
+          "label": "Mia \u00b7 disgust",
+          "intonation": "disgust",
+          "emotion": "disgust",
+          "description": "Repelled, dismissive.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_disgust_freeform.wav"
+        },
+        {
+          "id": "mia_proud",
+          "label": "Mia \u00b7 proud",
+          "intonation": "proud",
+          "emotion": "pride",
+          "description": "Confident, proud.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_pride_freeform.wav"
+        },
+        {
+          "id": "mia_guilty",
+          "label": "Mia \u00b7 guilty",
+          "intonation": "guilty",
+          "emotion": "guilt",
+          "description": "Apologetic, subdued.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_guilt_freeform.wav"
+        },
+        {
+          "id": "mia_embarrassed",
+          "label": "Mia \u00b7 embarrassed",
+          "intonation": "embarrassed",
+          "emotion": "embarrassment",
+          "description": "Awkward, embarrassed.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_embarassment_freeform.wav"
+        }
+      ]
+    },
+    {
+      "id": "leo",
+      "label": "Leo",
+      "language": "en",
+      "gender": "male",
+      "source": "emov-db-sam",
+      "cast_role": "expressive",
+      "presets": [
+        {
+          "id": "leo_neutral",
+          "label": "Leo \u00b7 neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Calm male delivery (EmoV-DB sam).",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "leo_neutral.wav"
+        },
+        {
+          "id": "leo_amused",
+          "label": "Leo \u00b7 amused",
+          "intonation": "amused",
+          "emotion": "amusement",
+          "description": "Dry amusement.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "leo_amused.wav"
+        },
+        {
+          "id": "leo_angry",
+          "label": "Leo \u00b7 angry",
+          "intonation": "angry",
+          "emotion": "anger",
+          "description": "Frustrated, firm.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "leo_angry.wav"
+        },
+        {
+          "id": "leo_disgusted",
+          "label": "Leo \u00b7 disgusted",
+          "intonation": "disgusted",
+          "emotion": "disgust",
+          "description": "Dismissive, unimpressed.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "leo_disgusted.wav"
+        },
+        {
+          "id": "leo_sleepy",
+          "label": "Leo \u00b7 sleepy",
+          "intonation": "sleepy",
+          "emotion": "sleepy",
+          "description": "Tired, low energy.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "leo_sleepy.wav"
+        }
+      ]
+    }
+  ]
+}

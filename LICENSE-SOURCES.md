@@ -19,6 +19,13 @@
 - **License:** **CC BY 4.0** — commercial use allowed with attribution.
 - **Attribution:** Koizumi et al., LibriTTS-R (Interspeech 2023); Zen et al., LibriTTS (2019).
 
+## LibriTTS catalog (`libri_*_neutral.wav`)
+
+- **Origin:** LibriTTS-R dev-clean — 18 additional narrators (7 female, 11 male).
+- **Balance:** Skewed male because expressive cast has more female emotions (Mia 15 vs Leo 5).
+- **License:** **CC BY 4.0** — same as LibriTTS-R.
+- **Speaker list:** see `catalog-speakers.json`.
+
 ## LJ (`lj_neutral.wav`)
 
 - **Origin:** [LJ Speech](https://keithito.com/LJ-Speech-Dataset/) mirror via Hume TADA Space (`ljspeech.wav`).

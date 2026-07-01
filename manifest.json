@@ -1,6 +1,13 @@
 {
   "version": 1,
   "sample_prefix": "samples/en",
+  "balance": {
+    "expressive_female": 15,
+    "expressive_male": 5,
+    "catalog_female": 7,
+    "catalog_male": 11,
+    "note": "Mia 15 vs Leo 5 expressive presets → catalog skews male (11M / 7F)."
+  },
   "characters": [
     {
       "id": "mia",
@@ -250,7 +257,9 @@
           "narration_recommended": true,
           "file": "nora_soft.wav"
         }
-      ]
+      ],
+      "reader_name": "Christie Nowak",
+      "libritts_speaker_id": "84"
     },
     {
       "id": "owen",
@@ -280,7 +289,9 @@
           "narration_recommended": true,
           "file": "owen_soft.wav"
         }
-      ]
+      ],
+      "reader_name": "Mark Nelson",
+      "libritts_speaker_id": "251"
     },
     {
       "id": "lj",
@@ -296,9 +307,423 @@
           "intonation": "neutral",
           "emotion": "neutral",
           "description": "Classic flat audiobook timbre (LJ Speech, public domain).",
-          "recording_quality": "audiobook_legacy",
+          "recording_quality": "audiobook_clean",
           "narration_recommended": true,
-          "file": "lj_neutral.wav"
+          "file": "ljspeech.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_7850",
+      "label": "Jill",
+      "language": "en",
+      "gender": "female",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "7850",
+      "reader_name": "Jill Engle",
+      "presets": [
+        {
+          "id": "libri_7850_neutral",
+          "label": "Jill · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 7850 (Jill Engle).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_7850_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_2035",
+      "label": "Sharon",
+      "language": "en",
+      "gender": "female",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "2035",
+      "reader_name": "Sharon Bautista",
+      "presets": [
+        {
+          "id": "libri_2035_neutral",
+          "label": "Sharon · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 2035 (Sharon Bautista).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_2035_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_6313",
+      "label": "Jennifer",
+      "language": "en",
+      "gender": "female",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "6313",
+      "reader_name": "Jennifer Wiginton",
+      "presets": [
+        {
+          "id": "libri_6313_neutral",
+          "label": "Jennifer · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 6313 (Jennifer Wiginton).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_6313_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_1988",
+      "label": "Ransom",
+      "language": "en",
+      "gender": "female",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "1988",
+      "reader_name": "Ransom",
+      "presets": [
+        {
+          "id": "libri_1988_neutral",
+          "label": "Ransom · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 1988 (Ransom).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_1988_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_5895",
+      "label": "iamartin",
+      "language": "en",
+      "gender": "female",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "5895",
+      "reader_name": "iamartin",
+      "presets": [
+        {
+          "id": "libri_5895_neutral",
+          "label": "iamartin · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 5895 (iamartin).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_5895_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_6345",
+      "label": "Jean",
+      "language": "en",
+      "gender": "female",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "6345",
+      "reader_name": "Jean Bascom",
+      "presets": [
+        {
+          "id": "libri_6345_neutral",
+          "label": "Jean · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 6345 (Jean Bascom).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_6345_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_1462",
+      "label": "E",
+      "language": "en",
+      "gender": "female",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "1462",
+      "reader_name": "E. Tavano",
+      "presets": [
+        {
+          "id": "libri_1462_neutral",
+          "label": "E · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 1462 (E. Tavano).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_1462_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_7976",
+      "label": "JenniferRutters",
+      "language": "en",
+      "gender": "male",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "7976",
+      "reader_name": "JenniferRutters",
+      "presets": [
+        {
+          "id": "libri_7976_neutral",
+          "label": "JenniferRutters · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 7976 (JenniferRutters).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_7976_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_2428",
+      "label": "Stephen",
+      "language": "en",
+      "gender": "male",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "2428",
+      "reader_name": "Stephen Kinford",
+      "presets": [
+        {
+          "id": "libri_2428_neutral",
+          "label": "Stephen · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 2428 (Stephen Kinford).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_2428_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_8297",
+      "label": "David",
+      "language": "en",
+      "gender": "male",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "8297",
+      "reader_name": "David Mecionis",
+      "presets": [
+        {
+          "id": "libri_8297_neutral",
+          "label": "David · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 8297 (David Mecionis).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_8297_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_2803",
+      "label": "aquielisunari",
+      "language": "en",
+      "gender": "male",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "2803",
+      "reader_name": "aquielisunari",
+      "presets": [
+        {
+          "id": "libri_2803_neutral",
+          "label": "aquielisunari · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 2803 (aquielisunari).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_2803_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_2086",
+      "label": "Nicodemus",
+      "language": "en",
+      "gender": "male",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "2086",
+      "reader_name": "Nicodemus",
+      "presets": [
+        {
+          "id": "libri_2086_neutral",
+          "label": "Nicodemus · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 2086 (Nicodemus).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_2086_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_3170",
+      "label": "VOICEGUY",
+      "language": "en",
+      "gender": "male",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "3170",
+      "reader_name": "VOICEGUY",
+      "presets": [
+        {
+          "id": "libri_3170_neutral",
+          "label": "VOICEGUY · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 3170 (VOICEGUY).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_3170_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_3752",
+      "label": "Mark",
+      "language": "en",
+      "gender": "male",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "3752",
+      "reader_name": "Mark Welch",
+      "presets": [
+        {
+          "id": "libri_3752_neutral",
+          "label": "Mark · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 3752 (Mark Welch).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_3752_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_174",
+      "label": "Peter",
+      "language": "en",
+      "gender": "male",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "174",
+      "reader_name": "Peter Eastman",
+      "presets": [
+        {
+          "id": "libri_174_neutral",
+          "label": "Peter · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 174 (Peter Eastman).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_174_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_5536",
+      "label": "David",
+      "language": "en",
+      "gender": "male",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "5536",
+      "reader_name": "David Mix",
+      "presets": [
+        {
+          "id": "libri_5536_neutral",
+          "label": "David · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 5536 (David Mix).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_5536_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_5694",
+      "label": "Winston",
+      "language": "en",
+      "gender": "male",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "5694",
+      "reader_name": "Winston Tharp",
+      "presets": [
+        {
+          "id": "libri_5694_neutral",
+          "label": "Winston · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 5694 (Winston Tharp).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_5694_neutral.wav"
+        }
+      ]
+    },
+    {
+      "id": "libri_3000",
+      "label": "Brian",
+      "language": "en",
+      "gender": "male",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "catalog": true,
+      "libritts_speaker_id": "3000",
+      "reader_name": "Brian von Dedenroth",
+      "presets": [
+        {
+          "id": "libri_3000_neutral",
+          "label": "Brian · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Audiobook read — LibriTTS-R speaker 3000 (Brian von Dedenroth).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "libri_3000_neutral.wav"
         }
       ]
     }

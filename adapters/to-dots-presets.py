@@ -52,6 +52,8 @@ def main() -> None:
                 }
             if character.get("cast_role"):
                 entry["cast_role"] = character["cast_role"]
+            if character.get("catalog"):
+                entry["catalog"] = True
             voices.append(entry)
 
     json.dump(voices, sys.stdout, indent=2, ensure_ascii=False)

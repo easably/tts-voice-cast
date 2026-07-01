@@ -16,8 +16,18 @@
       "libritts_speaker_id": "84",
       "reader_name": "Christie Nowak",
       "presets": [
-        { "id": "nora_neutral", "intonation": "neutral", "pick": 0 },
-        { "id": "nora_soft", "intonation": "soft", "pick": 1 }
+        {
+          "id": "nora_neutral",
+          "intonation": "neutral",
+          "pick": 0,
+          "description": "Even audiobook read (LibriTTS-R, Christie Nowak)."
+        },
+        {
+          "id": "nora_soft",
+          "intonation": "soft",
+          "pick": 1,
+          "description": "Gentle, unhurried read — same speaker, calmer passage."
+        }
       ]
     },
     {
@@ -28,8 +38,18 @@
       "libritts_speaker_id": "251",
       "reader_name": "Mark Nelson",
       "presets": [
-        { "id": "owen_neutral", "intonation": "neutral", "pick": 0 },
-        { "id": "owen_soft", "intonation": "soft", "pick": 1 }
+        {
+          "id": "owen_neutral",
+          "intonation": "neutral",
+          "pick": 0,
+          "description": "Steady male audiobook read (LibriTTS-R, Mark Nelson)."
+        },
+        {
+          "id": "owen_soft",
+          "intonation": "soft",
+          "pick": 1,
+          "description": "Softer pacing — same speaker, second neutral clip."
+        }
       ]
     },
     {
@@ -38,7 +58,12 @@
       "gender": "female",
       "source": "ljspeech",
       "presets": [
-        { "id": "lj_neutral", "intonation": "neutral", "file": "ljspeech.wav" }
+        {
+          "id": "lj_neutral",
+          "intonation": "neutral",
+          "file": "ljspeech.wav",
+          "description": "Classic flat audiobook timbre (LJ Speech, public domain)."
+        }
       ]
     }
   ]

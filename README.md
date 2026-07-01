@@ -19,7 +19,10 @@ adapters/to-tada-presets.py   # future
 ```bash
 ./scripts/download-all.sh
 # Mia: ~10 MB from Hugging Face (no token)
-# Leo: needs pip install huggingface_hub soundfile
+# Leo: EmoV-DB (needs huggingface_hub + soundfile)
+# Nora/Owen/LJ: LibriTTS-R + LJSpeech neutral narrators (needs pyarrow)
+# Catalog: 18 LibriTTS-R narrators (7F / 11M) — see catalog-speakers.json
+# Regenerates manifest.json via scripts/generate-manifest.py
 ```
 
 ## dots.tts integration

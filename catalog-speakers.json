@@ -1,0 +1,34 @@
+{
+  "balance_note": "Mia 15 vs Leo 5 expressive presets → catalog skews male (11M / 7F).",
+  "dataset": "mythicinfinity/libritts_r",
+  "subset_shards": [
+    "data/dev.clean/dev.clean-00000-of-00004.parquet",
+    "data/dev.clean/dev.clean-00001-of-00004.parquet",
+    "data/dev.clean/dev.clean-00002-of-00004.parquet",
+    "data/dev.clean/dev.clean-00003-of-00004.parquet"
+  ],
+  "clip_sec": { "min": 6.0, "max": 10.5, "target": 8.0 },
+  "exclude_speaker_ids": ["84", "251"],
+  "target_female": 7,
+  "target_male": 11,
+  "speakers": [
+    { "speaker_id": "7850", "gender": "female", "reader_name": "Jill Engle" },
+    { "speaker_id": "2035", "gender": "female", "reader_name": "Sharon Bautista" },
+    { "speaker_id": "6313", "gender": "female", "reader_name": "Jennifer Wiginton" },
+    { "speaker_id": "1988", "gender": "female", "reader_name": "Ransom" },
+    { "speaker_id": "5895", "gender": "female", "reader_name": "iamartin" },
+    { "speaker_id": "6345", "gender": "female", "reader_name": "Jean Bascom" },
+    { "speaker_id": "1462", "gender": "female", "reader_name": "E. Tavano" },
+    { "speaker_id": "7976", "gender": "male", "reader_name": "JenniferRutters" },
+    { "speaker_id": "2428", "gender": "male", "reader_name": "Stephen Kinford" },
+    { "speaker_id": "8297", "gender": "male", "reader_name": "David Mecionis" },
+    { "speaker_id": "2803", "gender": "male", "reader_name": "aquielisunari" },
+    { "speaker_id": "2086", "gender": "male", "reader_name": "Nicodemus" },
+    { "speaker_id": "3170", "gender": "male", "reader_name": "VOICEGUY" },
+    { "speaker_id": "3752", "gender": "male", "reader_name": "Mark Welch" },
+    { "speaker_id": "174", "gender": "male", "reader_name": "Peter Eastman" },
+    { "speaker_id": "5536", "gender": "male", "reader_name": "David Mix" },
+    { "speaker_id": "5694", "gender": "male", "reader_name": "Winston Tharp" },
+    { "speaker_id": "3000", "gender": "male", "reader_name": "Brian von Dedenroth" }
+  ]
+}

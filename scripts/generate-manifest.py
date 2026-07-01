@@ -89,12 +89,27 @@ def main() -> None:
     for entry in catalog["speakers"]:
         characters.append(_catalog_character(entry))
 
+    exp_f = sum(1 for c in expressive["characters"] if c.get("gender") == "female")
+    exp_m = sum(1 for c in expressive["characters"] if c.get("gender") == "male")
+    comm_f = sum(
+        len(c.get("presets", []))
+        for c in expressive["characters"]
+        if c.get("gender") == "female" and c.get("commercial_safe")
+    )
+    comm_m = sum(
+        len(c.get("presets", []))
+        for c in expressive["characters"]
+        if c.get("gender") == "male" and c.get("commercial_safe")
+    )
+
     manifest = {
         "version": 1,
         "sample_prefix": "samples/en",
         "balance": {
-            "expressive_female": 15,
-            "expressive_male": 5,
+            "expressive_female_characters": exp_f,
+            "expressive_male_characters": exp_m,
+            "commercial_expressive_presets_female": comm_f,
+            "commercial_expressive_presets_male": comm_m,
             "catalog_female": catalog["target_female"],
             "catalog_male": catalog["target_male"],
             "note": catalog.get("balance_note", ""),

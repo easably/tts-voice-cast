@@ -2,40 +2,44 @@
 
 Shared voice reference library for **dots.tts** and **TADA**: one speaker, many intonation clips (book narration and dialogue).
 
+## Cast overview
+
+| Group | Characters | Intonations | Commercial use |
+|-------|------------|-------------|----------------|
+| **Expressive (Hume)** | Mia (F) | **17** | Demo only — verify Hume terms |
+| **Expressive (EmoV)** | Nova (F), Leo (M) | **5 each** | **CC BY 4.0** — OK for commercial |
+| **Named narrators** | Nora, Owen, LJ | 1–2 | CC BY / public domain |
+| **Catalog** | 18 LibriTTS-R | 1 each | CC BY 4.0 |
+
+For **one voice × many clean intonations** with **commercial license**: use **Nova** or **Leo** (or Mia for internal demos).
+
 ## Layout
 
 ```
-manifest.json           # engine-neutral cast metadata
-samples/en/             # WAV files (downloaded, not committed)
-scripts/download-mia.sh # Hume TADA Space — Mia (17 emotions)
-scripts/build-leo.py    # EmoV-DB speaker sam — Leo (5 emotions)
-scripts/download-all.sh # both
+manifest.json              # generated full cast
+manifest-expressive.json   # Mia + Leo + Nova
+emov-characters.json       # EmoV-DB build config (Leo, Nova)
+scripts/download-all.sh
 adapters/to-dots-presets.py
-adapters/to-tada-presets.py   # future
+adapters/to-tada-presets.py
 ```
 
 ## Quick start
 
 ```bash
+pip install -r requirements-build.txt   # optional; download-all.sh auto-installs
 ./scripts/download-all.sh
-# Mia: ~10 MB from Hugging Face (no token)
-# Leo: EmoV-DB (needs huggingface_hub + soundfile)
-# Nora/Owen/LJ: LibriTTS-R + LJSpeech neutral narrators (needs pyarrow)
-# Catalog: 18 LibriTTS-R narrators (7F / 11M) — see catalog-speakers.json
-# Regenerates manifest.json via scripts/generate-manifest.py
 ```
 
-## dots.tts integration
-
-Submodule at `vendor/voice-cast` in [dots-tts](https://github.com/easably/dots-tts). Docker build runs `download-all.sh` and copies `samples/en/` into the app image.
-
-Regenerate `presets.json` voices:
+## TADA integration
 
 ```bash
-python3 adapters/to-dots-presets.py > /path/to/dots-tts/presets.voices.json
-# merge dialogue_examples / book_examples from existing presets.json
+python3 adapters/to-tada-presets.py --legacy-aliases > voices.json
+# merge dialogue_examples / book_examples in the engine repo
 ```
+
+Submodule: `vendor/voice-cast` in [tada](https://github.com/easably/tada) and [dots-tts](https://github.com/easably/dots-tts).
 
 ## Licenses
 
-See [LICENSE-SOURCES.md](LICENSE-SOURCES.md).
+See [LICENSE-SOURCES.md](LICENSE-SOURCES.md) and [plans/commercial-expressive-cast.md](plans/commercial-expressive-cast.md).

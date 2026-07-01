@@ -15,7 +15,7 @@ fi
 
 export PYTHONPATH="${SCRIPTS}${PYTHONPATH:+:${PYTHONPATH}}"
 
-python3 "${SCRIPTS}/build-leo.py" --tar
+python3 "${SCRIPTS}/build-emov-characters.py"
 python3 "${SCRIPTS}/build-narrator-samples.py"
 python3 "${SCRIPTS}/build-narrator-catalog.py"
 python3 "${SCRIPTS}/generate-manifest.py"

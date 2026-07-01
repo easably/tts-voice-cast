@@ -1,0 +1,4 @@
+# Build-time dependencies for voice sample scripts (not required at inference).
+soundfile>=0.12.1
+huggingface_hub>=0.23.0
+pyarrow>=14.0.0

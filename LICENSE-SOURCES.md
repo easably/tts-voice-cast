@@ -3,16 +3,20 @@
 ## Mia (`fb_ears_*`)
 
 - **Origin:** [HumeAI/tada Hugging Face Space](https://huggingface.co/spaces/HumeAI/tada/tree/main/samples/en)
-- **Use:** Demo / R&D voice cast. Verify [Hume](https://hume.ai) terms before commercial redistribution.
+- **Use:** Demo / R&D voice cast (17 emotions). Verify [Hume](https://hume.ai) terms before commercial redistribution.
+- **Commercial alternative:** use **Nova** + **Leo** (EmoV-DB, CC BY 4.0).
 - **Attribution:** Hume AI TADA demo samples.
 
-## Leo (`leo_*.wav`)
+## Leo (`leo_*.wav`) / Nova (`nova_*.wav`)
 
-- **Origin:** [EmoV-DB](https://openslr.org/115/) via Hugging Face dataset `erminga/emo-tts`, speaker **sam** (male).
-- **License:** Typically **CC BY 4.0** — retain attribution to EmoV-DB authors.
+- **Origin:** [EmoV-DB](https://openslr.org/115/) via Hugging Face `erminga/emo-tts`.
+  - Leo — speaker **sam** (male)
+  - Nova — speaker **bea** (female)
+- **License:** **CC BY 4.0** — commercial use allowed with attribution.
 - **Attribution:** Adigwe et al., EmoV-DB: A emotional voices database (2018).
+- **Note:** Studio-quality acted emotions; 5 intonations per speaker (neutral, amused, angry, disgusted, sleepy). Best **commercial-safe** expressive cast today.
 
-## Nora / Owen (`nora_*.wav`, `owen_*.wav`)
+## Mia (`fb_ears_*`, `mia_*` via Hume filenames)
 
 - **Origin:** [LibriTTS-R](https://openslr.org/141/) via `mythicinfinity/libritts_r` (dev-clean).
 - **Speakers:** 84 (Christie Nowak, female), 251 (Mark Nelson, male).

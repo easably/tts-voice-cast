@@ -2,8 +2,10 @@
   "version": 1,
   "sample_prefix": "samples/en",
   "balance": {
-    "expressive_female": 15,
-    "expressive_male": 5,
+    "expressive_female_characters": 2,
+    "expressive_male_characters": 1,
+    "commercial_expressive_presets_female": 5,
+    "commercial_expressive_presets_male": 5,
     "catalog_female": 7,
     "catalog_male": 11,
     "note": "Mia 15 vs Leo 5 expressive presets → catalog skews male (11M / 7F)."
@@ -16,6 +18,8 @@
       "gender": "female",
       "source": "hume-tada-space",
       "cast_role": "expressive",
+      "commercial_safe": false,
+      "license": "hume-demo",
       "presets": [
         {
           "id": "mia_neutral",
@@ -166,6 +170,26 @@
           "recording_quality": "studio_clean",
           "narration_recommended": true,
           "file": "fb_ears_emo_embarassment_freeform.wav"
+        },
+        {
+          "id": "mia_adoration",
+          "label": "Mia · adoration",
+          "intonation": "adoration",
+          "emotion": "adoration",
+          "description": "Warm, affectionate.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_adoration_freeform.wav"
+        },
+        {
+          "id": "mia_disappointment",
+          "label": "Mia · disappointment",
+          "intonation": "disappointment",
+          "emotion": "disappointment",
+          "description": "Let down, subdued.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "fb_ears_emo_disappointment_freeform.wav"
         }
       ]
     },
@@ -176,6 +200,8 @@
       "gender": "male",
       "source": "emov-db-sam",
       "cast_role": "expressive",
+      "commercial_safe": true,
+      "license": "CC-BY-4.0",
       "presets": [
         {
           "id": "leo_neutral",
@@ -226,6 +252,68 @@
           "recording_quality": "studio_clean",
           "narration_recommended": true,
           "file": "leo_sleepy.wav"
+        }
+      ]
+    },
+    {
+      "id": "nova",
+      "label": "Nova",
+      "language": "en",
+      "gender": "female",
+      "source": "emov-db-bea",
+      "cast_role": "expressive",
+      "commercial_safe": true,
+      "license": "CC-BY-4.0",
+      "presets": [
+        {
+          "id": "nova_neutral",
+          "label": "Nova · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Clear, even female delivery (EmoV-DB bea).",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "nova_neutral.wav"
+        },
+        {
+          "id": "nova_amused",
+          "label": "Nova · amused",
+          "intonation": "amused",
+          "emotion": "amusement",
+          "description": "Warm amusement.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "nova_amused.wav"
+        },
+        {
+          "id": "nova_angry",
+          "label": "Nova · angry",
+          "intonation": "angry",
+          "emotion": "anger",
+          "description": "Sharp, assertive.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "nova_angry.wav"
+        },
+        {
+          "id": "nova_disgusted",
+          "label": "Nova · disgusted",
+          "intonation": "disgusted",
+          "emotion": "disgust",
+          "description": "Cool dismissal.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "nova_disgusted.wav"
+        },
+        {
+          "id": "nova_sleepy",
+          "label": "Nova · sleepy",
+          "intonation": "sleepy",
+          "emotion": "sleepy",
+          "description": "Soft, relaxed pace.",
+          "recording_quality": "studio_clean",
+          "narration_recommended": true,
+          "file": "nova_sleepy.wav"
         }
       ]
     },

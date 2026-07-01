@@ -1,0 +1,37 @@
+{
+  "repo": "erminga/emo-tts",
+  "characters": [
+    {
+      "id": "leo",
+      "label": "Leo",
+      "speaker": "sam",
+      "gender": "male",
+      "commercial_safe": true,
+      "license": "CC-BY-4.0",
+      "source": "emov-db-sam",
+      "emotions": {
+        "Neutral": { "id": "leo_neutral", "intonation": "neutral", "emotion": "neutral", "description": "Calm male delivery." },
+        "Amused": { "id": "leo_amused", "intonation": "amused", "emotion": "amusement", "description": "Dry amusement." },
+        "Angry": { "id": "leo_angry", "intonation": "angry", "emotion": "anger", "description": "Frustrated, firm." },
+        "Disgusted": { "id": "leo_disgusted", "intonation": "disgusted", "emotion": "disgust", "description": "Dismissive, unimpressed." },
+        "Sleepy": { "id": "leo_sleepy", "intonation": "sleepy", "emotion": "sleepy", "description": "Tired, low energy." }
+      }
+    },
+    {
+      "id": "nova",
+      "label": "Nova",
+      "speaker": "bea",
+      "gender": "female",
+      "commercial_safe": true,
+      "license": "CC-BY-4.0",
+      "source": "emov-db-bea",
+      "emotions": {
+        "Neutral": { "id": "nova_neutral", "intonation": "neutral", "emotion": "neutral", "description": "Clear, even female delivery." },
+        "Amused": { "id": "nova_amused", "intonation": "amused", "emotion": "amusement", "description": "Warm amusement." },
+        "Angry": { "id": "nova_angry", "intonation": "angry", "emotion": "anger", "description": "Sharp, assertive." },
+        "Disgusted": { "id": "nova_disgusted", "intonation": "disgusted", "emotion": "disgust", "description": "Cool dismissal." },
+        "Sleepy": { "id": "nova_sleepy", "intonation": "sleepy", "emotion": "sleepy", "description": "Soft, relaxed pace." }
+      }
+    }
+  ]
+}

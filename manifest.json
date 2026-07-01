@@ -2,197 +2,15 @@
   "version": 1,
   "sample_prefix": "samples/en",
   "balance": {
-    "expressive_female_characters": 2,
+    "expressive_female_characters": 1,
     "expressive_male_characters": 1,
-    "commercial_expressive_presets_female": 5,
-    "commercial_expressive_presets_male": 5,
+    "free_license_expressive_presets_female": 5,
+    "free_license_expressive_presets_male": 5,
     "catalog_female": 7,
     "catalog_male": 11,
     "note": "Mia 15 vs Leo 5 expressive presets → catalog skews male (11M / 7F)."
   },
   "characters": [
-    {
-      "id": "mia",
-      "label": "Mia",
-      "language": "en",
-      "gender": "female",
-      "source": "hume-tada-space",
-      "cast_role": "expressive",
-      "commercial_safe": false,
-      "license": "hume-demo",
-      "presets": [
-        {
-          "id": "mia_neutral",
-          "label": "Mia · neutral",
-          "intonation": "neutral",
-          "emotion": "neutral",
-          "description": "Even, conversational neutral.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_neutral_freeform.wav"
-        },
-        {
-          "id": "mia_calm",
-          "label": "Mia · calm",
-          "intonation": "calm",
-          "emotion": "serenity",
-          "description": "Soft, relaxed delivery.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_serenity_freeform.wav"
-        },
-        {
-          "id": "mia_curious",
-          "label": "Mia · curious",
-          "intonation": "curious",
-          "emotion": "interest",
-          "description": "Interested, questioning tone.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_interest_freeform.wav"
-        },
-        {
-          "id": "mia_amused",
-          "label": "Mia · amused",
-          "intonation": "amused",
-          "emotion": "amusement",
-          "description": "Light, amused tone.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_amusement_freeform.wav"
-        },
-        {
-          "id": "mia_amazed",
-          "label": "Mia · amazed",
-          "intonation": "amazed",
-          "emotion": "amazement",
-          "description": "Surprised, delighted.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_amazement_freeform.wav"
-        },
-        {
-          "id": "mia_confused",
-          "label": "Mia · confused",
-          "intonation": "confused",
-          "emotion": "confusion",
-          "description": "Uncertain, puzzled.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_confusion_freeform.wav"
-        },
-        {
-          "id": "mia_content",
-          "label": "Mia · content",
-          "intonation": "content",
-          "emotion": "contentment",
-          "description": "Warm, satisfied.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_contentment_freeform.wav"
-        },
-        {
-          "id": "mia_sad",
-          "label": "Mia · sad",
-          "intonation": "sad",
-          "emotion": "sadness",
-          "description": "Melancholic.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_sadness_freeform.wav"
-        },
-        {
-          "id": "mia_angry",
-          "label": "Mia · angry",
-          "intonation": "angry",
-          "emotion": "anger",
-          "description": "Sharp, intense.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_anger_freeform.wav"
-        },
-        {
-          "id": "mia_relief",
-          "label": "Mia · relief",
-          "intonation": "relief",
-          "emotion": "relief",
-          "description": "Relieved, unwinding.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_relief_freeform.wav"
-        },
-        {
-          "id": "mia_fearful",
-          "label": "Mia · fearful",
-          "intonation": "fearful",
-          "emotion": "fear",
-          "description": "Anxious, tense.",
-          "recording_quality": "dramatic",
-          "narration_recommended": false,
-          "file": "fb_ears_emo_fear_freeform.wav"
-        },
-        {
-          "id": "mia_disgust",
-          "label": "Mia · disgust",
-          "intonation": "disgust",
-          "emotion": "disgust",
-          "description": "Repelled, dismissive.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_disgust_freeform.wav"
-        },
-        {
-          "id": "mia_proud",
-          "label": "Mia · proud",
-          "intonation": "proud",
-          "emotion": "pride",
-          "description": "Confident, proud.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_pride_freeform.wav"
-        },
-        {
-          "id": "mia_guilty",
-          "label": "Mia · guilty",
-          "intonation": "guilty",
-          "emotion": "guilt",
-          "description": "Apologetic, subdued.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_guilt_freeform.wav"
-        },
-        {
-          "id": "mia_embarrassed",
-          "label": "Mia · embarrassed",
-          "intonation": "embarrassed",
-          "emotion": "embarrassment",
-          "description": "Awkward, embarrassed.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_embarassment_freeform.wav"
-        },
-        {
-          "id": "mia_adoration",
-          "label": "Mia · adoration",
-          "intonation": "adoration",
-          "emotion": "adoration",
-          "description": "Warm, affectionate.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_adoration_freeform.wav"
-        },
-        {
-          "id": "mia_disappointment",
-          "label": "Mia · disappointment",
-          "intonation": "disappointment",
-          "emotion": "disappointment",
-          "description": "Let down, subdued.",
-          "recording_quality": "studio_clean",
-          "narration_recommended": true,
-          "file": "fb_ears_emo_disappointment_freeform.wav"
-        }
-      ]
-    },
     {
       "id": "leo",
       "label": "Leo",
@@ -200,7 +18,6 @@
       "gender": "male",
       "source": "emov-db-sam",
       "cast_role": "expressive",
-      "commercial_safe": true,
       "license": "CC-BY-4.0",
       "presets": [
         {
@@ -253,7 +70,8 @@
           "narration_recommended": true,
           "file": "leo_sleepy.wav"
         }
-      ]
+      ],
+      "free_license": true
     },
     {
       "id": "nova",
@@ -262,7 +80,6 @@
       "gender": "female",
       "source": "emov-db-bea",
       "cast_role": "expressive",
-      "commercial_safe": true,
       "license": "CC-BY-4.0",
       "presets": [
         {
@@ -315,7 +132,8 @@
           "narration_recommended": true,
           "file": "nova_sleepy.wav"
         }
-      ]
+      ],
+      "free_license": true
     },
     {
       "id": "nora",
@@ -324,6 +142,7 @@
       "gender": "female",
       "source": "libritts-r",
       "cast_role": "narrator",
+      "free_license": true,
       "presets": [
         {
           "id": "nora_neutral",
@@ -347,7 +166,8 @@
         }
       ],
       "reader_name": "Christie Nowak",
-      "libritts_speaker_id": "84"
+      "libritts_speaker_id": "84",
+      "license": "CC-BY-4.0"
     },
     {
       "id": "owen",
@@ -356,6 +176,7 @@
       "gender": "male",
       "source": "libritts-r",
       "cast_role": "narrator",
+      "free_license": true,
       "presets": [
         {
           "id": "owen_neutral",
@@ -379,7 +200,8 @@
         }
       ],
       "reader_name": "Mark Nelson",
-      "libritts_speaker_id": "251"
+      "libritts_speaker_id": "251",
+      "license": "CC-BY-4.0"
     },
     {
       "id": "lj",
@@ -388,6 +210,7 @@
       "gender": "female",
       "source": "ljspeech",
       "cast_role": "narrator",
+      "free_license": true,
       "presets": [
         {
           "id": "lj_neutral",
@@ -399,7 +222,8 @@
           "narration_recommended": true,
           "file": "ljspeech.wav"
         }
-      ]
+      ],
+      "license": "public-domain"
     },
     {
       "id": "libri_7850",
@@ -409,6 +233,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "7850",
       "reader_name": "Jill Engle",
       "presets": [
@@ -432,6 +258,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "2035",
       "reader_name": "Sharon Bautista",
       "presets": [
@@ -455,6 +283,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "6313",
       "reader_name": "Jennifer Wiginton",
       "presets": [
@@ -478,6 +308,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "1988",
       "reader_name": "Ransom",
       "presets": [
@@ -501,6 +333,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "5895",
       "reader_name": "iamartin",
       "presets": [
@@ -524,6 +358,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "6345",
       "reader_name": "Jean Bascom",
       "presets": [
@@ -547,6 +383,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "1462",
       "reader_name": "E. Tavano",
       "presets": [
@@ -570,6 +408,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "7976",
       "reader_name": "JenniferRutters",
       "presets": [
@@ -593,6 +433,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "2428",
       "reader_name": "Stephen Kinford",
       "presets": [
@@ -616,6 +458,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "8297",
       "reader_name": "David Mecionis",
       "presets": [
@@ -639,6 +483,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "2803",
       "reader_name": "aquielisunari",
       "presets": [
@@ -662,6 +508,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "2086",
       "reader_name": "Nicodemus",
       "presets": [
@@ -685,6 +533,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "3170",
       "reader_name": "VOICEGUY",
       "presets": [
@@ -708,6 +558,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "3752",
       "reader_name": "Mark Welch",
       "presets": [
@@ -731,6 +583,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "174",
       "reader_name": "Peter Eastman",
       "presets": [
@@ -754,6 +608,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "5536",
       "reader_name": "David Mix",
       "presets": [
@@ -777,6 +633,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "5694",
       "reader_name": "Winston Tharp",
       "presets": [
@@ -800,6 +658,8 @@
       "source": "libritts-r",
       "cast_role": "narrator",
       "catalog": true,
+      "free_license": true,
+      "license": "CC-BY-4.0",
       "libritts_speaker_id": "3000",
       "reader_name": "Brian von Dedenroth",
       "presets": [

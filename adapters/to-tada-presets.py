@@ -11,7 +11,18 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "manifest.json"
 
-LEGACY_ALIASES = {
+LEGACY_ALIASES_NOVA = {
+    "narrator_neutral": ("nova_neutral", "Narrator — neutral"),
+    "narrator_calm": ("nova_sleepy", "Narrator — calm"),
+    "host_excited": ("nova_amused", "Host — amused"),
+    "character_sad": ("nova_neutral", "Character — neutral"),
+    "character_angry": ("nova_angry", "Character — angry"),
+    "character_curious": ("nova_amused", "Character — curious"),
+    "character_amazed": ("nova_amused", "Character — amazed"),
+    "character_fear": ("nova_disgusted", "Character — uneasy"),
+}
+
+LEGACY_ALIASES_MIA = {
     "narrator_neutral": ("mia_neutral", "Narrator — neutral"),
     "narrator_calm": ("mia_calm", "Narrator — calm"),
     "host_excited": ("mia_amused", "Host — amused"),
@@ -26,9 +37,9 @@ LEGACY_ALIASES = {
 def main() -> None:
     parser = argparse.ArgumentParser(description="Export TADA presets from voice-cast manifest")
     parser.add_argument(
-        "--commercial-only",
+        "--free-license-only",
         action="store_true",
-        help="Only voices with commercial_safe=true (CC-BY / public domain)",
+        help="Only voices with free_license=true (CC-BY / public domain)",
     )
     parser.add_argument(
         "--legacy-aliases",
@@ -51,12 +62,15 @@ def main() -> None:
         }
     ]
     by_id: dict[str, dict] = {}
+    has_mia = False
 
     for character in data.get("characters", []):
-        if args.commercial_only and not character.get("commercial_safe"):
+        if args.free_license_only and not character.get("free_license"):
             continue
 
         char_id = character["id"]
+        if char_id == "mia":
+            has_mia = True
         char_label = character.get("label", char_id)
 
         for preset in character.get("presets", []):
@@ -76,8 +90,8 @@ def main() -> None:
                 entry["cast_role"] = character["cast_role"]
             if character.get("catalog"):
                 entry["catalog"] = True
-            if character.get("commercial_safe") is not None:
-                entry["commercial_safe"] = character["commercial_safe"]
+            if character.get("free_license") is not None:
+                entry["free_license"] = character["free_license"]
             if character.get("license"):
                 entry["license"] = character["license"]
             if preset.get("hint"):
@@ -86,11 +100,12 @@ def main() -> None:
             by_id[entry["id"]] = entry
 
     if args.legacy_aliases:
-        for legacy_id, (target_id, label) in LEGACY_ALIASES.items():
+        aliases = LEGACY_ALIASES_MIA if has_mia else LEGACY_ALIASES_NOVA
+        for legacy_id, (target_id, label) in aliases.items():
             if target_id in by_id:
                 voices.append({**by_id[target_id], "id": legacy_id, "label": label})
 
-    if not args.commercial_only:
+    if not args.free_license_only:
         voices.append(
             {
                 "id": "ljspeech",
@@ -98,9 +113,9 @@ def main() -> None:
                 "description": "Reference from the public LJ Speech dataset.",
                 "recording_quality": "legacy",
                 "narration_recommended": False,
-                "commercial_safe": True,
+                "free_license": True,
                 "license": "public-domain",
-                "hint": "Older studio recording — prefer Nova/Leo for commercial work.",
+                "hint": "Older studio recording — prefer Nova/Leo for libre voices.",
                 "sample": f"{prefix}/ljspeech.wav",
                 "emotion": "neutral",
             }

@@ -6,7 +6,7 @@
       "label": "Leo",
       "speaker": "sam",
       "gender": "male",
-      "commercial_safe": true,
+      "free_license": true,
       "license": "CC-BY-4.0",
       "source": "emov-db-sam",
       "emotions": {
@@ -22,7 +22,7 @@
       "label": "Nova",
       "speaker": "bea",
       "gender": "female",
-      "commercial_safe": true,
+      "free_license": true,
       "license": "CC-BY-4.0",
       "source": "emov-db-bea",
       "emotions": {

@@ -34,7 +34,7 @@ def main() -> None:
             "gender": char["gender"],
             "source": char["source"],
             "cast_role": "expressive",
-            "commercial_safe": char.get("commercial_safe", False),
+            "free_license": char.get("free_license", False),
             "license": char.get("license"),
             "presets": presets,
         }

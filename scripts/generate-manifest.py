@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,6 +24,8 @@ def _catalog_character(entry: dict) -> dict:
         "source": "libritts-r",
         "cast_role": "narrator",
         "catalog": True,
+        "free_license": True,
+        "license": "CC-BY-4.0",
         "libritts_speaker_id": sp,
         "reader_name": entry.get("reader_name", label),
         "presets": [
@@ -48,12 +51,19 @@ def _named_narrator(entry: dict) -> dict:
         "gender": entry["gender"],
         "source": entry["source"],
         "cast_role": "narrator",
+        "free_license": True,
         "presets": [],
     }
     if entry.get("reader_name"):
         char["reader_name"] = entry["reader_name"]
     if entry.get("libritts_speaker_id"):
         char["libritts_speaker_id"] = str(entry["libritts_speaker_id"])
+    if entry.get("license"):
+        char["license"] = entry["license"]
+    elif entry.get("source") == "ljspeech":
+        char["license"] = "public-domain"
+    else:
+        char["license"] = "CC-BY-4.0"
 
     for preset in entry["presets"]:
         pid = preset["id"]
@@ -80,6 +90,12 @@ def _named_narrator(entry: dict) -> dict:
 
 def main() -> None:
     expressive = json.loads((ROOT / "manifest-expressive.json").read_text(encoding="utf-8"))
+    if os.environ.get("VOICE_CAST_INCLUDE_HUME_DEMO") == "1":
+        hume = json.loads((ROOT / "manifest-hume-demo.json").read_text(encoding="utf-8"))
+        expressive = {
+            "characters": hume["characters"] + expressive["characters"],
+        }
+
     narrators = json.loads((ROOT / "narrators.json").read_text(encoding="utf-8"))
     catalog = json.loads((ROOT / "catalog-speakers.json").read_text(encoding="utf-8"))
 
@@ -91,15 +107,15 @@ def main() -> None:
 
     exp_f = sum(1 for c in expressive["characters"] if c.get("gender") == "female")
     exp_m = sum(1 for c in expressive["characters"] if c.get("gender") == "male")
-    comm_f = sum(
+    free_f = sum(
         len(c.get("presets", []))
         for c in expressive["characters"]
-        if c.get("gender") == "female" and c.get("commercial_safe")
+        if c.get("gender") == "female" and c.get("free_license")
     )
-    comm_m = sum(
+    free_m = sum(
         len(c.get("presets", []))
         for c in expressive["characters"]
-        if c.get("gender") == "male" and c.get("commercial_safe")
+        if c.get("gender") == "male" and c.get("free_license")
     )
 
     manifest = {
@@ -108,8 +124,8 @@ def main() -> None:
         "balance": {
             "expressive_female_characters": exp_f,
             "expressive_male_characters": exp_m,
-            "commercial_expressive_presets_female": comm_f,
-            "commercial_expressive_presets_male": comm_m,
+            "free_license_expressive_presets_female": free_f,
+            "free_license_expressive_presets_male": free_m,
             "catalog_female": catalog["target_female"],
             "catalog_male": catalog["target_male"],
             "note": catalog.get("balance_note", ""),

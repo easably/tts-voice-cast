@@ -1,0 +1,5 @@
+samples/en/*.wav
+samples/en/synth_transcripts.json
+__pycache__/
+*.pyc
+.DS_Store

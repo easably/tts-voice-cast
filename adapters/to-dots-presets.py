@@ -35,8 +35,7 @@ def main() -> None:
         lang = LANG_MAP.get(character.get("language", "en"), "EN")
 
         for preset in character.get("presets", []):
-            voices.append(
-                {
+            entry = {
                     "id": preset["id"],
                     "label": preset["label"],
                     "character": char_id,
@@ -51,7 +50,9 @@ def main() -> None:
                     "sample": f"{prefix}/{preset['file']}",
                     "prompt_text": "",
                 }
-            )
+            if character.get("cast_role"):
+                entry["cast_role"] = character["cast_role"]
+            voices.append(entry)
 
     json.dump(voices, sys.stdout, indent=2, ensure_ascii=False)
     sys.stdout.write("\n")

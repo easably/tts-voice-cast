@@ -1,0 +1,45 @@
+{
+  "dataset": "mythicinfinity/libritts_r",
+  "subset_shards": [
+    "data/dev.clean/dev.clean-00000-of-00004.parquet",
+    "data/dev.clean/dev.clean-00001-of-00004.parquet",
+    "data/dev.clean/dev.clean-00002-of-00004.parquet",
+    "data/dev.clean/dev.clean-00003-of-00004.parquet"
+  ],
+  "clip_sec": { "min": 6.0, "max": 10.5, "target": 8.0 },
+  "narrators": [
+    {
+      "id": "nora",
+      "label": "Nora",
+      "gender": "female",
+      "source": "libritts-r",
+      "libritts_speaker_id": "84",
+      "reader_name": "Christie Nowak",
+      "presets": [
+        { "id": "nora_neutral", "intonation": "neutral", "pick": 0 },
+        { "id": "nora_soft", "intonation": "soft", "pick": 1 }
+      ]
+    },
+    {
+      "id": "owen",
+      "label": "Owen",
+      "gender": "male",
+      "source": "libritts-r",
+      "libritts_speaker_id": "251",
+      "reader_name": "Mark Nelson",
+      "presets": [
+        { "id": "owen_neutral", "intonation": "neutral", "pick": 0 },
+        { "id": "owen_soft", "intonation": "soft", "pick": 1 }
+      ]
+    },
+    {
+      "id": "lj",
+      "label": "LJ",
+      "gender": "female",
+      "source": "ljspeech",
+      "presets": [
+        { "id": "lj_neutral", "intonation": "neutral", "file": "ljspeech.wav" }
+      ]
+    }
+  ]
+}

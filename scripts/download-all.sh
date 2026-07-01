@@ -14,4 +14,6 @@ fi
 
 python3 scripts/build-leo.py --tar
 
+python3 scripts/build-narrator-samples.py
+
 echo "All voice-cast samples ready under ${ROOT}/samples/en"

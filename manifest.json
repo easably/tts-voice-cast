@@ -8,6 +8,7 @@
       "language": "en",
       "gender": "female",
       "source": "hume-tada-space",
+      "cast_role": "expressive",
       "presets": [
         {
           "id": "mia_neutral",
@@ -167,6 +168,7 @@
       "language": "en",
       "gender": "male",
       "source": "emov-db-sam",
+      "cast_role": "expressive",
       "presets": [
         {
           "id": "leo_neutral",
@@ -217,6 +219,86 @@
           "recording_quality": "studio_clean",
           "narration_recommended": true,
           "file": "leo_sleepy.wav"
+        }
+      ]
+    },
+    {
+      "id": "nora",
+      "label": "Nora",
+      "language": "en",
+      "gender": "female",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "presets": [
+        {
+          "id": "nora_neutral",
+          "label": "Nora · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Even audiobook read (LibriTTS-R, Christie Nowak).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "nora_neutral.wav"
+        },
+        {
+          "id": "nora_soft",
+          "label": "Nora · soft",
+          "intonation": "soft",
+          "emotion": "neutral",
+          "description": "Gentle, unhurried read — same speaker, calmer passage.",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "nora_soft.wav"
+        }
+      ]
+    },
+    {
+      "id": "owen",
+      "label": "Owen",
+      "language": "en",
+      "gender": "male",
+      "source": "libritts-r",
+      "cast_role": "narrator",
+      "presets": [
+        {
+          "id": "owen_neutral",
+          "label": "Owen · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Steady male audiobook read (LibriTTS-R, Mark Nelson).",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "owen_neutral.wav"
+        },
+        {
+          "id": "owen_soft",
+          "label": "Owen · soft",
+          "intonation": "soft",
+          "emotion": "neutral",
+          "description": "Softer pacing — same speaker, second neutral clip.",
+          "recording_quality": "audiobook_clean",
+          "narration_recommended": true,
+          "file": "owen_soft.wav"
+        }
+      ]
+    },
+    {
+      "id": "lj",
+      "label": "LJ",
+      "language": "en",
+      "gender": "female",
+      "source": "ljspeech",
+      "cast_role": "narrator",
+      "presets": [
+        {
+          "id": "lj_neutral",
+          "label": "LJ · neutral",
+          "intonation": "neutral",
+          "emotion": "neutral",
+          "description": "Classic flat audiobook timbre (LJ Speech, public domain).",
+          "recording_quality": "audiobook_legacy",
+          "narration_recommended": true,
+          "file": "lj_neutral.wav"
         }
       ]
     }
